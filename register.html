@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRC Sports Academy | Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.jpeg" alt="logo.jpeg">
+                    <h1>pentvars SRC<span> Sports Academy</span></h1>
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="navbar" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="new-activities.html">New Activities</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="register.html" class="active">Register</a></li>
+                    <li><a href="book-online.html" class="cta-btn">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Register for pentvars SRC Sports Academy</h1>
+                <p>Join our community of athletes and sports enthusiasts</p>
+            </div>
+        </section>
+
+        <section class="registration-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Create Account</h2>
+                    <form id="registrationForm" novalidate>
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required aria-required="true" aria-label="Full name">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required aria-required="true" aria-label="Email address">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required aria-required="true" aria-label="Phone number">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" aria-label="Date of birth">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sportInterest">Primary Sport Interest *</label>
+                            <select id="sportInterest" name="sportInterest" required aria-required="true">
+                                <option value="">Select a sport</option>
+                                <option value="wrestling">Wrestling</option>
+                                <option value="taekwondo">Taekwondo</option>
+                                <option value="judo">Judo</option>
+                                <option value="volleyball">Volleyball</option>
+                                <option value="football">Football</option>
+                                <option value="tabletennis">Table Tennis</option>
+                                <option value="gymnastics">Gymnastics</option>
+                                <option value="rugby">Rugby</option>
+                                <option value="handball">Handball</option>
+                                <option value="ballet">Ballet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <label>
+                                <input type="checkbox" id="newsletterSubscribe" name="newsletterSubscribe">
+                                Subscribe to our newsletter for updates and exclusive content
+                            </label>
+                        </div>
+
+                        <!-- CAPTCHA Section -->
+                        <div class="captcha-container">
+                            <div class="captcha-display">
+                                <span id="captchaCode">A3F9K2</span>
+                                <button type="button" id="refreshCaptcha" aria-label="Refresh CAPTCHA"><i class="fas fa-sync-alt"></i></button>
+                            </div>
+                            <div class="form-group">
+                                <label for="captchaInput">Enter the code above *</label>
+                                <input type="text" id="captchaInput" required aria-required="true">
+                                <span class="error-message" id="captchaError"></span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-block">Register Now</button>
+                    </form>
+                    
+                    <div id="registrationSuccess" class="success-message" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Registration successful! A confirmation email has been sent to your email address.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>pentvars SRC Sports Academy</h3>
+                    <p>Excellence in sports development at Pentecost University</p>
+                </div>
+                <div class="footer-section">
+                    
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                         <a href="#" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; pentvars 2026 SRC Sports Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
