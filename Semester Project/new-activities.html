@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pentvars SRC Sports Academy | New Activities</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.jpeg" alt="logo.jpeg">
+                    <h1>pentvars SRC <span>Sports Academy</span></h1>
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="navbar" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="new-activities.html" class="active">New Activities</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="book-online.html" class="cta-btn">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>New Sports Activities</h1>
+                <p>Exciting new programs now available</p>
+            </div>
+        </section>
+
+        <section class="new-sports">
+            <div class="container">
+                <div class="sports-detail-grid">
+                    <!-- Wrestling -->
+                    <div class="sport-detail-card">
+                        <div class="sport-detail-image">
+                            <img src="wrestling.jpeg" alt="wrestling.JPG">
+                        </div>
+                        <div class="sport-detail-content">
+                            <h2><i class="fas fa-w"></i> Wrestling</h2>
+                            <p>Our new wrestling program focuses on Olympic-style freestyle wrestling. Athletes learn takedowns, escapes, and pinning combinations from certified coaches with competitive experience.</p>
+                            <ul>
+                                <li>Ages 10+</li>
+                                <li>Beginner to Advanced levels</li>
+                                <li>Competition opportunities available</li>
+                            </ul>
+                            <a href="book-online.html" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Taekwondo -->
+                    <div class="sport-detail-card reverse">
+                        <div class="sport-detail-image">
+                            <img src="taekwondo.JPG" alt="taekwondo.JPG">
+                        </div>
+                        <div class="sport-detail-content">
+                            <h2><i class="fas fa-hand-peace"></i> Taekwondo</h2>
+                            <p>Learn the Korean martial art of self-defense. Our Taekwondo program emphasizes kicking techniques, patterns, sparring, and the philosophical principles of respect and discipline.</p>
+                            <ul>
+                                <li>All ages welcome</li>
+                                <li>Belt progression system</li>
+                                <li>Self-defense focus</li>
+                            </ul>
+                            <a href="book-online.html" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Judo -->
+                    <div class="sport-detail-card">
+                        <div class="sport-detail-image">
+                            <img src="judo.JPG" alt="Judo throws and grappling">
+                        </div>
+                        <div class="sport-detail-content">
+                            <h2><i class="fas fa-user-ninja"></i> Judo</h2>
+                            <p>Master the gentle way. Judo teaches throws, grappling, and submission techniques while building physical fitness, mental discipline, and respect for opponents.</p>
+                            <ul>
+                                <li>Ages 8+</li>
+                                <li>Olympic-style training</li>
+                                <li>Emphasis on safety</li>
+                            </ul>
+                            <a href="book-online.html" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Volleyball -->
+                    <div class="sport-detail-card reverse">
+                        <div class="sport-detail-image">
+                            <img src="Volleyball.jpeg" alt="Volleyball.JPG">
+                        </div>
+                        <div class="sport-detail-content">
+                            <h2><i class="fas fa-volleyball-ball"></i> Volleyball</h2>
+                            <p>Join our exciting new volleyball program! Learn serving, passing, setting, and spiking in a team environment that builds coordination and strategic thinking.</p>
+                            <ul>
+                                <li>Indoor and beach options</li>
+                                <li>Competitive leagues</li>
+                                <li>Recreational play</li>
+                            </ul>
+                            <a href="book-online.html" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Q&A Forum Section -->
+        <section class="qa-forum">
+            <div class="container">
+                <h2>Community Q&A Forum</h2>
+                <p>Have questions about our new activities? Ask our community!</p>
+                
+                <div class="forum-container">
+                    <div class="question-form">
+                        <h3>Ask a Question</h3>
+                        <form id="qaForm">
+                            <input type="text" id="questionName" placeholder="Your Name" required aria-label="Your name">
+                            <textarea id="questionText" placeholder="Your question..." rows="3" required aria-label="Your question"></textarea>
+                            <button type="submit" class="btn-primary">Post Question</button>
+                        </form>
+                    </div>
+                    
+                    <div class="questions-list" id="questionsList">
+                        <h3>Recent Questions</h3>
+                        <div class="question-item">
+                            <p><strong>John D.</strong>: Are the new sports suitable for beginners?</p>
+                            <span class="answer">Coach: Yes, all our programs welcome beginners!</span>
+                        </div>
+                        <div class="question-item">
+                            <p><strong>Sarah M.</strong>: What equipment do I need for Judo?</p>
+                            <span class="answer">Coach: We provide all necessary equipment for beginners.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SRC Sports Academy</h3>
+                    <p>Excellence in sports development at Pentecost University</p>
+                </div>
+                <div class="footer-section">
+                   
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                         <a href="#" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 pentvars SRC Sports Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
